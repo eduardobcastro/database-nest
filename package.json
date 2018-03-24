@@ -1,6 +1,6 @@
 {
   "name": "database-nest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Removes duplicated values by grouping unchanged keys and storing details in arrays",
   "main": "index.js",
   "scripts": {
