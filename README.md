@@ -1,11 +1,12 @@
 # database-nest
-Removes duplicated values by grouping unchanged keys and storing details in arrays
+Removes duplicated values by grouping unchanged keys and storing details in arrays.
 
 ## Installation
 ```
 npm install database-nest
 ```
 ## Usage
+PS: data must be ordered by group definitions
 ```javascript
 const dNest = require('database-nest')
 
