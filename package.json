@@ -1,0 +1,22 @@
+{
+  "name": "database-nest",
+  "version": "1.0.0",
+  "description": "Removes duplicated values by grouping unchanged keys and storing details in arrays",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eduardobcastro/database-nest.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Eduardo de Britto Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eduardobcastro/database-nest/issues"
+  },
+  "homepage": "https://github.com/eduardobcastro/database-nest#readme"
+}
