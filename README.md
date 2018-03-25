@@ -122,3 +122,27 @@ console.log(JSON.stringify(grouped))
   }]
 }]
 ```
+## If you prefer using reduce
+This code outputs the same results
+
+```javascript
+list.reduce((prev, curr) => {
+    let lastCountry = prev[prev.length - 1]
+	if (!lastCountry || lastCountry.id !== curr.country_id) {
+        lastCountry = {id: curr.country_id, name: curr.country_name, states: []}
+        prev.push(lastCountry)
+    }
+    let lastState = lastCountry.states[lastCountry.states.length - 1]
+ 	if (!lastState || lastState.id !== curr.state_id) {
+        lastState = {id: curr.state_id, cities: []}
+        lastCountry.states.push(lastState)
+    }
+    let lastCity = lastState.cities[lastState.cities.length - 1]
+ 	if (!lastCity || lastCity.id !== curr.city) {
+        lastCity = {id: curr.city, details: []}
+        lastState.cities.push(lastCity)
+    }
+    lastCity.details.push({product: curr.product, value: curr.value})
+    return prev 
+}, [])
+```
